@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.full-page {
+  height: 100vh;
+  background: url("pics6.jpg") center/cover no-repeat;
+  position: relative;
+}
+.logo {
+  color: white;
+  text-align: right;
+  position: absolute;
+  top: 290px;
+  right: 100px;
+}
+
+.logo h4 {
+  font-size: 65px;
+  letter-spacing: 2px;
+  padding-right: 80px;
+  text-transform: uppercase;
+}
+
+.logo h1 {
+  font-size: 100px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.bottom-bar {
+  background-color: #a8794e; /* same color as top */
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.upper-bar {
+  background-color: #a8794e; /* same color as top */
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+button {
+  position: absolute;
+  top: 500px;
+  right: 305px;
+  background-color: #a8794e; /* rich coffee brown */
+  color: black;
+  border: none;
+  padding: 14px 30px;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white; /* lighter brown on hover */
+}
+.logo-image-sa-taas {
+  position: fixed;
+  top: 15px;
+  left: 30px;
+  z-index: 20;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
