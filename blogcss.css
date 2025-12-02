@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.full-page {
+  height: 100vh;
+  background: url("pics6.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+/* Navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* aligns items to the right */
+  align-items: center;
+  height: 60px;
+  width: 100%; /* makes it span the full width */
+  padding-right: 50px; /* adds space from the right edge */
+  top: 20px;
+  left: 0;
+  position: fixed; /* stays at the top even when scrolling */
+  z-index: 10;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+/* Line hidden at first */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2b1500; /* change color as you like */
+  transition: width 0.3s ease;
+}
+
+/* Line appears on hover */
+.navbar a:hover::after {
+  width: 100%;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #2b1500;
+}
+.tagline {
+  width: 550px;
+  position: absolute;
+  height: auto;
+  margin-top: 390px;
+  right:120px;
+  color: #e29b59;
+}
+.tagline p {
+  font-size: 27px;
+  font-weight: bold;
+}
+.logo {
+  color: white;
+  text-align: right;
+  position: absolute;
+  top: 220px;
+  right: 100px;
+}
+
+.logo h4 {
+  font-size: 65px;
+  letter-spacing: 2px;
+  padding-right: 80px;
+  text-transform: uppercase;
+}
+
+.logo h1 {
+  font-size: 100px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+p {
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 25px;
+}
+.bottom-bar {
+  background-color: #a8794e
+; /* same color as top */
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.upper-bar {
+  background-color: #a8794e
+; /* same color as top */
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo-image-sa-taas {
+  position: fixed;
+  top: 15px;
+  left: 30px;
+  z-index: 20;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
